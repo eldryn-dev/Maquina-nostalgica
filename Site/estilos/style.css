@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #131a1d;
+    background-image:url(/Site/media/tv-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+body > div#screen > h1 {
+    margin: 0px 15px;
+    padding: 10px;
+
+    font-size: 5em;    
+    font-family: 'Great Vibes', cursive , Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    
+    text-align: center;
+    color: white;
+    text-shadow: 8px 8px 5px #000000;
+
+}
+
+main{
+    height: 75vh;
+}
+
+div#botao-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    }
+
+input#botao{
+    font-size: 1.6em;
+    font-family: 'Roboto Mono', monospace;
+
+    width: 320px;
+
+    background-color: rgba(0, 0, 0, 0.342);
+    color: white;    
+    border-radius: 20px;
+    padding: 10px;
+
+
+    border-style: none;
+}
+
+input#botao:hover{
+    background-color: #C1D9D9;
+    color:#026873 ;
+    transition: 1s ease;
+
+}
+
+footer > p {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family:'Roboto Mono', monospace;
+}
