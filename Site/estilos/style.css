@@ -7,7 +7,12 @@
     padding: 0;
 }
 
+/* background-color: #131a1d ;*/
+
+@media screen and (max-width: 900px) and (min-width: 650px);
+
 body{
+    
     background-color: #131a1d;
     background-image:url(/Site/media/tv-02.jpg);
     background-repeat: no-repeat;
@@ -26,8 +31,6 @@ body > div#screen > h1 {
     
     text-align: center;
     color: white;
-
-
 }
 
 main{
@@ -70,4 +73,29 @@ footer > p {
     color: white;
     text-align: center;
     font-family:'Roboto Mono', monospace;
+}
+
+@media screen and (max-width: 649px ) {
+
+    body{
+        background-color: #131a1d;
+        background-image:url(/Site/media/tv-02.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: center top;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 901px ) {
+    body{
+        background-color: #131a1d;
+        background-image:url(/Site/media/tv-02.jpg);
+        background-repeat: no-repeat;
+        background-attachment: center center;
+        background-size: 50vw;
+        background-position: center top;
+    }
 }
