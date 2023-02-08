@@ -9,18 +9,6 @@
 
 /* background-color: #131a1d ;*/
 
-@media screen and (max-width: 900px) and (min-width: 650px);
-
-body{
-    
-    background-color: #131a1d;
-    background-image:url(/Site/media/tv-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-}
-
-
 body > div#screen > h1 {
     margin: 0px 15px;
     padding: 10px;
@@ -81,21 +69,46 @@ footer > p {
         background-color: #131a1d;
         background-image:url(/Site/media/tv-02.jpg);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: contain;
         background-position: center top;
     }
-
-
-    
 }
 
-@media screen and (min-width: 901px ) {
+@media screen and (min-width: 650px){
+
+body{
+
+    background-color: #131a1d;
+    background-image:url(/Site/media/tv-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+
+
+}
+@media screen and (min-width: 850px ) {
     body{
         background-color: #131a1d;
         background-image:url(/Site/media/tv-02.jpg);
         background-repeat: no-repeat;
         background-attachment: center center;
-        background-size: 50vw;
-        background-position: center top;
+        background-size: 100vw;
+        background-position: center center;
+
+    }
+}
+
+@media screen and (min-width: 1200px ) {
+    body{
+        background-color: #131a1d;
+        background-image:url(/Site/media/tv-02.jpg);
+        background-repeat: no-repeat;
+        background-attachment: center center;
+        background-size: 60vw;
+        background-position: center center;
+
     }
 }
