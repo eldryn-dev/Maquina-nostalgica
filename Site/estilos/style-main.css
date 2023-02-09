@@ -12,13 +12,41 @@ body{
     width: 100vw;
     height: 100vh;
     
-    background-color: wheat;
+    background-image: linear-gradient(wheat, #74c6cf );
+}
+
+
+div#opcao{
+    display: flex;
+    justify-content: center;
+}
+
+
+div#opcao > input , div#opcao > a > input{
+    padding: 8px;
+    margin: 5px;
+
+    font-family: 'Roboto Mono', monospace;
+
+    background-color: #e76857;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+} 
+
+div#opcao > input:hover , div#opcao > a > input:hover{
+    background-color: #96f87d;
+    color: black;
+    transition: 0.5s ease-in-out;
 }
 
 header > h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 3em;
     text-align: center;
+    margin-bottom: 15px;
     
 }
 
@@ -27,6 +55,13 @@ header {
     text-align: center justify;
     
 }
+
+footer{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+
 @media screen and (max-width:685px) {
 
 body > div#tela {
