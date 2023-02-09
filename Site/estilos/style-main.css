@@ -159,7 +159,7 @@ header > p {
     
     body > div#tela {
         background-image: url(tv-y.png);
-        background-size: 750px;
+        background-size: 600px;
         background-repeat: no-repeat;
         background-position: center;
         height: 810px;
@@ -170,11 +170,11 @@ header > p {
     body > div#tela > iframe#yt-tela{
         position: relative; 
         background-color: black;
-        top: 50vh;
+        top: 49vh;
         left: 50vw;
         translate: -50% -85%;
-        height: 365px;
-        width: 560px;
+        height: 300px;
+        width: 450px;
         z-index: 1;
     }
     
