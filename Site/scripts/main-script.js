@@ -1,5 +1,6 @@
 var galery = []
 var video = window.document.getElementById('video')
+var toca = window.document.getElementById('yt-tela')
 
 var v1 = document.getElementById('v1')
 var v2 = document.getElementById('v2')
@@ -25,7 +26,8 @@ function salvar(){
     
 }
 
-      /*
+    /* Função para mostrar a galeria --
+
         v1.innerHTML = galery[0]
         v2.innerHTML = galery[1]
         v3.innerHTML = galery[2]
@@ -33,3 +35,7 @@ function salvar(){
         v5.innerHTML = galery[4]
     */
    
+function rep(){
+    toca.setAttribute('src' , 'https://www.youtube.com/watch?v=o_1aF54DO60&list=RDo_1aF54DO60&index=2&ab_channel=LanaDelReyVEVO')
+}
+    
