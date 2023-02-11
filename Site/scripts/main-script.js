@@ -31,9 +31,9 @@ function salvar(){
 
         //fim da função toEmbed//
 
-
-
         galery.push(linkfin)
+        //tentando armazenar itens entre paginas//
+        localStorage.setItem("galeria",galery)
         
         alert(`Recebemos seu link ${galery[c]}`)
         
@@ -51,7 +51,8 @@ function salvar(){
 //Função para reproduzir o input do usuario dentro do iframe//
 function rep(){
     localStorage.getItem("galeria")
-    toca.setAttribute('src' , galery[0])
+    alert(galery[0])
+    toca.setAttribute('src' , galery[0].text)
 }
    
 //Função para levar a array para a outra página
