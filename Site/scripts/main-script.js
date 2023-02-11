@@ -50,15 +50,15 @@ function salvar(){
 
 //Função para reproduzir o input do usuario dentro do iframe//
 function rep(){
-    localStorage.getItem("galeria")
+    let galery = JSON.parse(localStorage.getItem("galeria"))
     alert(galery[0])
-    toca.setAttribute('src' , galery[0].text)
+    toca.setAttribute('src' , galery[0])
 }
    
 //Função para levar a array para a outra página
 
 function take(){
-    localStorage.setItem("galeria",galery)
+    localStorage.setItem("galeria",JSON.stringify(galery))
 }
 
 //Função para alterar a string com o link do video para uma string com o link embed//
