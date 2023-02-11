@@ -13,8 +13,27 @@ var v5 = document.getElementById('v5')
 c=0
 function salvar(){
     if (galery.length < 5) {
+        link = video.value    
+        //Função toEmbed//
         
-        galery.push(video.value)
+        pontofin = parseInt(link.search(/&/))
+
+        alert(pontofin)
+        
+        //cortando a String no &//
+        nlink = link.slice(0 , pontofin)
+        alert(nlink)
+        
+        //Substituindo 'watch?v=' por 'embed/'
+        
+        linkfin = nlink.replace( "watch?v=" , "embed/")
+        alert(linkfin)
+
+        //fim da função toEmbed//
+
+
+
+        galery.push(linkfin)
         
         alert(`Recebemos seu link ${galery[c]}`)
         
@@ -26,16 +45,41 @@ function salvar(){
     
 }
 
-    /* Função para mostrar a galeria --
+    // Função para mostrar a galeria //
 
-        v1.innerHTML = galery[0]
-        v2.innerHTML = galery[1]
-        v3.innerHTML = galery[2]
-        v4.innerHTML = galery[3]
-        v5.innerHTML = galery[4]
-    */
-   
+
+//Função para reproduzir o input do usuario dentro do iframe//
 function rep(){
-    toca.setAttribute('src' , 'https://www.youtube.com/watch?v=o_1aF54DO60&list=RDo_1aF54DO60&index=2&ab_channel=LanaDelReyVEVO')
+    localStorage.getItem("galeria")
+    toca.setAttribute('src' , galery[0])
 }
+   
+//Função para levar a array para a outra página
+
+function take(){
+    localStorage.setItem("galeria",galery)
+}
+
+//Função para alterar a string com o link do video para uma string com o link embed//
+
+/*
+function toembed() {
+    link = video.value    
+    //Função toEmbed//
     
+    pontofin = parseInt(link.search(/&/))
+
+    alert(pontofin)
+    
+    //cortando a String no &//
+    nlink = link.slice(0 , pontofin)
+    alert(nlink)
+    
+    //Substituindo 'watch?v=' por 'embed/'
+    
+    linkfin = nlink.replace( "watch?v=" , "embed/")
+    alert(linkfin)
+
+    //fim da função toEmbed//
+}
+*/
