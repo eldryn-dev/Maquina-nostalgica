@@ -11,16 +11,11 @@
     <h1>Crie sua Máquina do Tempo</h1>
 
     <div id="links">Insira alguns de seus vídeos favoritos:
-        <input type="url" id="video"> <input type="button" value="Enviar" id="enviar" onclick="salvar()">
+        <input type="url" id="video"> <input type="button" value="Enviar" id="enviar" onclick="salvar() ; mostrar()" >
     </div>
     
-    <div id="galeria">
-        <li id="v1"></li>
-        <li id="v2"></li>
-        <li id="v3"></li>
-        <li id="v4"></li>
-        <li id="v5"></li>
-    </div>
+    <ul id="gal"> 
+    </ul>
 
     <a href="main.html"><input type="button" value="Retornar" onclick="take()"></a>
 
