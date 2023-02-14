@@ -22,7 +22,10 @@ function salvar(){
         
         linkfin = nlink.replace( "watch?v=" , "embed/")
         //alert(linkfin)//
+
+        //remove as caracteriscas do iframe//
         linkfin += "?controls=0&fs=0"
+        
         //fim da função toEmbed//
         if(galery.length == 0){
             galery[0] = linkfin
@@ -43,16 +46,7 @@ function salvar(){
     
 }
 
-    
-    /*
-    https://www.youtube.com/watch?v=m05-kE_tSB8&t=383s&ab_channel=JS
-    https://www.youtube.com/watch?v=OpYtndKTYdY&ab_channel=Clark
-    https://www.youtube.com/watch?v=p1IIHbbdekA&ab_channel=beyondwoods
-    https://www.youtube.com/watch?v=lEqFAvYivNk&ab_channel=averrsa
-    https://www.youtube.com/watch?v=1cJTxRNGUCs&ab_channel=loveless
-    */
 // mostrar a galeria //
-
 function mostrar(){ 
     // var spc vai ser o espaço onde vou mostrar os links//
     let spc = document.getElementById('gal')
@@ -74,9 +68,6 @@ function mostrar(){
     
     
     }
-
-
-
 
 //Função para reproduzir o input do usuario dentro do iframe//
 function rep(){
