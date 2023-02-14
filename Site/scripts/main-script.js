@@ -2,13 +2,6 @@ var galery = []
 var video = window.document.getElementById('video')
 var toca = window.document.getElementById('yt-tela')
 
-var v1 = document.getElementById('v1')
-var v2 = document.getElementById('v2')
-var v3 = document.getElementById('v3')
-var v4 = document.getElementById('v4')
-var v5 = document.getElementById('v5')
-
-
 let z=0  //z é uma variavel de controle para parar as funções 'salvar()' e 'mostrar ()'//
 c=0
 function salvar(){
@@ -29,7 +22,7 @@ function salvar(){
         
         linkfin = nlink.replace( "watch?v=" , "embed/")
         //alert(linkfin)//
-
+        linkfin += "?controls=0&fs=0"
         //fim da função toEmbed//
         if(galery.length == 0){
             galery[0] = linkfin
@@ -64,7 +57,6 @@ function mostrar(){
     // var spc vai ser o espaço onde vou mostrar os links//
     let spc = document.getElementById('gal')
     // var item vai ser cada link individual//
-    let cont = galery.length
     
     let item = document.createElement("li")    
     if (galery.length < 5 && z == 0){
